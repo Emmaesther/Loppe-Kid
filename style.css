@@ -1,0 +1,316 @@
+html
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Orbitron', sans-serif;
+}
+
+body 
+{
+    padding: 0;
+    margin: 0px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #d2e81a;
+}
+
+
+.logo-img {
+ 
+    height: 65px;
+    margin-top: 8px;
+
+}
+
+.ikon {
+    width: 80%
+
+}
+.top-nav{
+    background-color: #8fa9d4;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 25px 25px 25px;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 10px;
+    height: 80px;
+    text-align:left;
+}
+
+.some{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.top-nav a{
+    color:aliceblue;
+    /*display: flex;
+    display:block; 
+    padding: 14px 16px;
+    float: left;*/
+    padding-top: 10px;
+    transition: 0.4s;
+    text-decoration: none;
+    text-align:center;
+    width: 100px;
+}
+
+
+
+.top-nav a:hover:not(.active){
+    background-color:  #8fa9d4;
+}
+
+
+@media screen and (max-width:600px) {
+    .top-nav a{
+        float:none;
+    }
+}
+.text-box{
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    left: 50%;
+    width: 1000px;
+    transform: translate(-50%,-50%);
+}
+span{
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+    color: #d2e81a;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 80px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 80px rgba(0,0,0,0);
+        transform: translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 80px rgba(0,0,0,0);
+    }
+}
+span:ntg-child(1)
+{
+    animation-delay: 0.5s;
+}
+span:ntg-child(2)
+{
+    animation-delay: 1s;
+}
+span:ntg-child(3)
+{
+    animation-delay: 1.5s;
+}
+span:ntg-child(4)
+{
+    animation-delay: 2s;
+}
+span:ntg-child(5)
+{
+    animation-delay: 2.5s;
+}
+
+#text-box {
+    text-align: center;
+    font-size: 300%;
+    margin: 0; 
+}
+
+
+h1{
+    font-size: 200px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-buttion .bar {
+    height :3px;
+    width: 100%;  
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links {
+        /*display: none; */
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:  #8fa9d4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 80px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 168px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+/* links inside the dropdown */
+.dropdown-content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown menu on hover */
+.dropdown-content a:hover {background-color:lightblue;}
+
+/* Change color of dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block;}
+
+/* Change color of dropdown menu on hover */
+.dropdown:hover .dropbtn {background-color:#621c4b;}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:  #8fa9d4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 168px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+/* links inside the dropdown */
+.dropdown-content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown menu on hover */
+.dropdown-content a:hover {background-color:#ddd;}
+
+/* Change color of dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block;}
+
+/* Change color of dropdown menu on hover */
+.dropdown:hover .dropbtn {background-color: #621c4b;}
+
+.img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50px; 
+    height: 40px;
+}
+
+.background-img{
+    background-image: url(amalie.jpg);
+    display: block;
+    height: 100vh;
+}
+
+.section-wrapper{
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.column{
+    width: 50%;
+}
+
+.big-number{
+    font-size: 80px;
+    color: white;
+}
+
+.background-girls{
+    background-image: url(mangedamer.png);
+    height: 100vh;
+    background-position: center;
+}
+
+
+
+.background-girls .column {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.headline{
+ font-size: 80px;
+ color: #000000;
+ line-height: 70px;
+ margin-top: 50px;
+}
+
+
+.loppe-footer{
+    display: block;
+    width: 100%;
+    height: 145px;
+    background-repeat-y: no-repeat;
+    background-size: 114px;
+    background-image: url(mm.png);
+}
